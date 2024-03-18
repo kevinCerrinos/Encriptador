@@ -81,6 +81,9 @@ main > section {
   color: #495057;
   font-size: 0.8rem;
   margin: 10px 0px 0px 10px; 
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 } 
 
 .botones{
@@ -125,11 +128,6 @@ main > section {
   margin: 10px auto;
 }
 
-.informacion{
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
-}
 
 /* Teléfonos */
 @media only screen and (max-width: 767px){
