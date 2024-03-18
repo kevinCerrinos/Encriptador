@@ -125,6 +125,12 @@ main > section {
   margin: 10px auto;
 }
 
+.informacion{
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
 /* Teléfonos */
 @media only screen and (max-width: 767px){
   main {
