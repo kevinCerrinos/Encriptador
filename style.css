@@ -149,6 +149,7 @@ main > section {
   body {
     margin-top: 10px;
     max-width: 90vw;
+    overflow-y: auto;
   }
 
   header > img {
