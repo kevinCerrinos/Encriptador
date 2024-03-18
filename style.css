@@ -1,0 +1,155 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 1080px;
+  background-color: #f3f5fc;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  height: auto;
+  width: 100%;
+  height: 800px;
+  /* background-color: #0a3871; */
+}
+
+main > section {
+  
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input{
+  margin: 10px 10px 10px 40px;
+  flex: 2;
+}
+
+.output{
+  flex: 1;
+  margin: 10px 40px 10px 10px;
+}
+
+.text-area{
+  box-sizing: border-box;
+  padding: 10px;
+  resize: none;
+  width: 99.5%;
+  flex: 1;
+  border: none;
+  color: #0a3871;
+  text-transform: lowercase;
+  font-size: x-large;
+}
+::placeholder {
+  color: #0a3871;
+}
+.text-area:focus {
+  outline: none;
+}
+
+.mensaje{
+  box-sizing: border-box;
+  padding: 10px;
+  background: #fff;
+  background-image: url("images/muneco.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 24px;
+  flex: 1;
+  color: #0a3871;
+  resize: none;
+  font-size: x-large;
+}
+
+.mensaje:focus{
+  outline: none;
+}
+
+.informacion{
+  color: #495057;
+  font-size: 0.8rem;
+  margin: 10px 0px 0px 10px; 
+} 
+
+.botones{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-encriptar{
+  background-color: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  flex: 1;
+  padding: 14px;
+  margin: 10px;
+}
+
+.btn-desencriptar{
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+  padding: 14px;
+  margin: 10px;
+}
+
+
+.btn-copiar{
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  flex: 1;
+  padding: 14px;
+  width: 15rem
+}
+
+.container-btn-copiar{
+  margin: 10px auto;
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 767px){
+  main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .input {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .output {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    margin-top: 10px;
+    max-width: 90vw;
+  }
+
+  header > img {
+    margin-left: -40px;
+    margin-bottom: 10px;
+  }
+
+}
