@@ -1,5 +1,6 @@
 const textArea = document.querySelector('.text-area');
 const mensaje = document.querySelector('.mensaje');
+let toastBox = document.getElementById('toastBox')
 
 
 function encriptar(cadena){
@@ -45,4 +46,17 @@ function btnDesencriptar(){
 function btncopiar(){
   mensaje.select();
   document.execCommand('copy');
+  mensaje.value = ''
+  showToast('Text copied!')
+}
+
+function showToast(text){
+  let toast = document.createElement('div');
+  toast.classList.add('toast');
+  toast.innerHTML = text
+  toastBox.appendChild(toast)
+
+  setTimeout(() => {
+    toast.remove()
+  },1000);
 }
