@@ -47,7 +47,7 @@ function btncopiar(){
   mensaje.select();
   document.execCommand('copy');
   mensaje.value = ''
-  showToast('Text copied!')
+  showToast('Texto copiado!')
 }
 
 function showToast(text){
